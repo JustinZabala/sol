@@ -1,0 +1,113 @@
+/* ==== GENERAL ==== */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #fffde1; /* Amarillo claro */
+    color: #000;
+    text-align: center;
+}
+
+/* ==== ENCABEZADO ==== */
+header {
+    background-color: #2196f3; /* Azul */
+    color: #000;
+    padding: 20px 0;
+}
+
+header img {
+    width: 180px;
+    display: block;
+    margin: 0 auto;
+}
+
+header h1 {
+    font-size: 1.8em;
+    margin: 10px 0 20px;
+    font-weight: bold;
+}
+
+/* ==== MENÚ ==== */
+nav ul {
+    list-style: none;
+    padding: 10px 0;
+    margin: 0;
+    background-color: #f4e87c; /* Amarillo */
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #1a237e;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #004aad;
+}
+
+/* ==== TÍTULO ==== */
+main h2 {
+    margin-top: 40px;
+    color: #004aad;
+    font-size: 1.8em;
+}
+
+/* ==== NUEVO DISEÑO: MOSAICO ==== */
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    justify-content: center;
+    width: 85%;
+    max-width: 1000px;
+    margin: 40px auto;
+}
+
+/* ==== TARJETAS ==== */
+.tarjeta {
+    background-color: white;
+    border: 4px solid #004aad;
+    border-radius: 20px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.tarjeta:hover {
+    transform: translateY(-8px) rotate(-1deg);
+    box-shadow: 0 10px 18px rgba(0,0,0,0.3);
+}
+
+/* ==== IMÁGENES ==== */
+.tarjeta img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    border-bottom: 3px solid #004aad;
+}
+
+/* ==== TEXTO ==== */
+.tarjeta h3 {
+    color: #004aad;
+    margin: 15px 0 10px;
+    font-size: 1.2em;
+}
+
+.tarjeta p {
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+/* ==== PIE DE PÁGINA ==== */
+footer {
+    background-color: #2196f3;
+    color: white;
+    padding: 15px;
+    font-weight: bold;
+    margin-top: 50px;
+}

@@ -1,0 +1,95 @@
+/* ==== GENERAL ==== */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4e87c; /* amarillo suave */
+    color: #000;
+    text-align: center;
+}
+
+/* ==== ENCABEZADO ==== */
+header {
+    background-color: #2196f3; /* azul fuerte */
+    color: #000;
+    padding: 20px 0;
+}
+
+header img {
+    width: 180px;
+    display: block;
+    margin: 0 auto;
+}
+
+header h1 {
+    font-size: 1.8em;
+    margin: 10px 0 20px;
+    font-weight: bold;
+}
+
+/* ==== MENÚ ==== */
+nav ul {
+    list-style: none;
+    padding: 10px 0;
+    margin: 0;
+    background-color: #f4e87c; /* amarillo */
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #1a237e; /* azul oscuro */
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #004aad;
+}
+
+/* ==== GALERÍA ==== */
+main h2 {
+    margin-top: 40px;
+    color: #004aad;
+}
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    max-width: 900px;
+    margin: 30px auto;
+}
+
+.galeria img:nth-child(3) {
+    grid-column: 1 / span 2;
+    justify-self: center;
+}
+
+.galeria img {
+    width: 100%;
+    max-width: 380px;
+    border-radius: 15px;
+    border: 5px solid #004aad; /* borde azul */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    transition: transform 0.3s;
+}
+
+.galeria img:hover {
+    transform: scale(1.05);
+}
+
+/* ==== PIE DE PÁGINA ==== */
+footer {
+    background-color: #2196f3;
+    color: white;
+    padding: 15px;
+    margin-top: 40px;
+    font-weight: bold;
+}

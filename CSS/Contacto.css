@@ -1,0 +1,139 @@
+/* ==== GENERAL ==== */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #fffde1; /* Amarillo claro */
+    color: #000;
+    text-align: center;
+}
+
+/* ==== ENCABEZADO ==== */
+header {
+    background-color: #2196f3; /* Azul */
+    color: #000;
+    padding: 20px 0;
+}
+
+header img {
+    width: 180px;
+    display: block;
+    margin: 0 auto;
+}
+
+header h1 {
+    font-size: 1.8em;
+    margin: 10px 0 20px;
+    font-weight: bold;
+}
+
+/* ==== MENÚ ==== */
+nav ul {
+    list-style: none;
+    padding: 10px 0;
+    margin: 0;
+    background-color: #f4e87c; /* Amarillo */
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #1a237e;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: 0.3s;
+}
+
+nav ul li a:hover,
+nav ul li a.activo {
+    color: #004aad;
+    text-decoration: underline;
+}
+
+/* ==== CONTENIDO ==== */
+main {
+    padding: 40px 20px;
+}
+
+main h2 {
+    color: #004aad;
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+.intro {
+    color: #333;
+    font-size: 1.1em;
+    max-width: 600px;
+    margin: 0 auto 30px;
+}
+
+/* ==== FORMULARIO ==== */
+.formulario-contacto {
+    background-color: white;
+    border: 4px solid #004aad;
+    border-radius: 20px;
+    width: 90%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+    text-align: left;
+}
+
+.campo {
+    margin-bottom: 20px;
+}
+
+.campo label {
+    display: block;
+    font-weight: bold;
+    color: #004aad;
+    margin-bottom: 8px;
+}
+
+.campo input,
+.campo textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #2196f3;
+    border-radius: 8px;
+    font-size: 1em;
+    outline: none;
+}
+
+.campo input:focus,
+.campo textarea:focus {
+    border-color: #004aad;
+    background-color: #f0f8ff;
+}
+
+/* ==== BOTÓN ==== */
+button {
+    display: block;
+    width: 100%;
+    background-color: #004aad;
+    color: white;
+    padding: 12px;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #00367d;
+}
+
+/* ==== PIE DE PÁGINA ==== */
+footer {
+    background-color: #2196f3;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-weight: bold;
+    margin-top: 50px;
+}
