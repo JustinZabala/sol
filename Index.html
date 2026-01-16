@@ -4,34 +4,90 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fundación de Niños con Síndrome de Down</title>
-    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <img src="img/logo.png" alt="Logo de la fundación">
-        <h1>La mejor fundación para tu ser humano</h1>
-        <nav>
-            <ul>
-                <li><a href="Index.html">Inicio</a></li>
+
+<header class="header">
+    <img src="img/logo.png" alt="Logo de la fundación" class="logo">
+    <h1>La mejor fundación para tu ser humano</h1>
+
+    <nav class="nav">
+        <ul>
+            <li><a href="Index.html">Inicio</a></li>
                 <li><a href="Actividades dentro del centro.html">Catálogos</a></li>
                 <li><a href="Actividades fuera del centro.html">Promociones</a></li>
                 <li><a href="Actividades en otro pais.html">Viajes</a></li>
                 <li><a href="Contacto.html" class="activo">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
+        </ul>
+    </nav>
+</header>
 
-    <main>
-        <h2>Galería de Actividades</h2>
-        <div class="galeria">
-            <img src="https://i.pinimg.com/1200x/56/a6/ca/56a6ca41094e72486917b8bb9f1ae851.jpg" alt="Actividad dentro del centro">
-            <img src="https://i.pinimg.com/736x/5a/76/b2/5a76b26e544622176fc7b5d8d2e54644.jpg" alt="Actividad fuera del centro">
-            <img src="https://i.pinimg.com/1200x/47/1f/b5/471fb599d7d0510300150dc16bfe30fc.jpg" alt="Actividad en otro país">
+<main class="main">
+    <h2>Galería de Actividades</h2>
+
+    <section class="galeria">
+
+        <!-- CARD 1 -->
+        <div class="card">
+            <img src="https://i.pinimg.com/1200x/56/a6/ca/56a6ca41094e72486917b8bb9f1ae851.jpg">
+
+            <div class="card-buttons">
+                <a href="#img1" class="btn ver">Ver</a>
+                <a href="#" class="btn like">❤️</a>
+                <a href="#info1" class="btn info">Info</a>
+            </div>
         </div>
-    </main>
 
-    <footer>
-        <p>Todas las actividades del centro</p>
-    </footer>
+        <!-- CARD 2 -->
+        <div class="card">
+            <img src="https://i.pinimg.com/736x/5a/76/b2/5a76b26e544622176fc7b5d8d2e54644.jpg">
+
+            <div class="card-buttons">
+                <a href="#img2" class="btn ver">Ver</a>
+                <a href="#" class="btn like">❤️</a>
+                <a href="#info2" class="btn info">Info</a>
+            </div>
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="card">
+            <img src="https://i.pinimg.com/1200x/47/1f/b5/471fb599d7d0510300150dc16bfe30fc.jpg">
+
+            <div class="card-buttons">
+                <a href="#img3" class="btn ver">Ver</a>
+                <a href="#" class="btn like">❤️</a>
+                <a href="#info3" class="btn info">Info</a>
+            </div>
+        </div>
+
+    </section>
+</main>
+
+<!-- MODALES SOLO CON CSS -->
+<div id="img1" class="modal">
+    <a href="#" class="cerrar">✖</a>
+    <img src="https://i.pinimg.com/1200x/56/a6/ca/56a6ca41094e72486917b8bb9f1ae851.jpg">
+</div>
+
+<div id="img2" class="modal">
+    <a href="#" class="cerrar">✖</a>
+    <img src="https://i.pinimg.com/736x/5a/76/b2/5a76b26e544622176fc7b5d8d2e54644.jpg">
+</div>
+
+<div id="img3" class="modal">
+    <a href="#" class="cerrar">✖</a>
+    <img src="https://i.pinimg.com/1200x/47/1f/b5/471fb599d7d0510300150dc16bfe30fc.jpg">
+</div>
+
+<!-- INFO -->
+<div id="info1" class="info-box">Actividad realizada dentro del centro.</div>
+<div id="info2" class="info-box">Actividad realizada fuera del centro.</div>
+<div id="info3" class="info-box">Actividad internacional de la fundación.</div>
+
+<footer class="footer">
+    <p>© 2026 Fundación de Niños con Síndrome de Down</p>
+</footer>
+
 </body>
 </html>
